@@ -1,0 +1,499 @@
+/*
+Theme Name: Tawazun Theme
+Theme URI: https://example.com/tawazun
+Author: Your Name
+Description: A custom WordPress theme.
+Version: 1.0
+*/
+
+:root {
+    --primaryColor: #246CAD;
+    --secondaryColor: #246C9D;
+    --white: #F9F9F9;
+    --black: #000;
+    --button: #EE8727;
+    --header-bg: #12364F;
+    --link-hover: #f39c12;
+    --nav-link-color: #fff;
+}
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Cairo;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: var(--header-bg);
+    color: var(--white);
+    padding: 0;
+}
+
+
+
+.header-container {
+    width: 100%;
+  display: flex;
+  gap: 16px;
+  padding: 20px 60px;
+  justify-content: space-between;
+}
+.header-container > div {
+    
+    flex-basis: 20%;
+}
+
+.header-container > div:nth-child(2) {
+    flex-basis:60%;
+}
+.header-container > div:nth-child(3){ 
+    display: flex
+;
+    justify-content: flex-end;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+.header-btn {
+    background-color: var(--button);
+    color: var(--white);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+    
+}
+.btn{
+    padding: 10px 35px !important;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--white);
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: var(--primaryColor)!important;
+}
+
+/* Main Navigation */
+.main-nav {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.main-nav li a {
+    color: var(--nav-link-color);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.main-nav li a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    color: #fff;
+    position: relative;
+
+    padding: 100px ;
+    height: 100vh;
+    border-radius:  0  0 30px 30px
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    display: flex;
+    text-align: right;
+}
+
+.column {
+    text-align: right;
+    
+}
+.column-1{
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.column-1 img{
+    width: 122px;
+    margin-bottom: 60px;
+}
+.column-2 .image{
+    width: 80% !important;
+}
+.btn-primary{
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    color: #ffffff;
+    border: 1px solid #fff;
+}
+.btn-secondary{
+    background-color: var(--button) !important;
+    color: var(--white);
+}
+.fa-solid {
+    content: "\f0c9";
+    padding-left: 8px !important;
+}
+
+fa-solid:hover {
+    content: "\f103";
+    padding-left: 8px !important;
+}
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+    color:var(--white);
+    
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 2rem;
+}
+
+
+
+
+    .clients {
+        display: flex;
+        padding-left: 60px;
+        padding-right: 160px;
+        margin-top: -4%;
+        z-index: 99;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+.clients-title,.whatsapp{
+    flex: 1;
+}
+.clients-title h3{
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+.whatsapp {
+    text-align: left;
+    margin-top: -40px;
+}
+.whatsapp {
+    position: relative;
+    display: block;
+    top: -40px;
+    left: -40px;
+    transition: background-color 0.3s ease;
+
+}
+
+.whatsapp:hover::before {
+    content: "تواصل عبر الواتساب"; 
+    position: absolute;
+    bottom: 105%; 
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: var(--button);
+    color: var(--white);
+    padding: 15px 35px;
+    border-radius: 4px; 
+    font-size: 14px;
+    white-space: nowrap; 
+    z-index: 10; 
+}
+
+.whatsapp img {
+    display: block; 
+}
+.carousel {
+    flex: 8;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+    direction: ltr;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow:
+  3.9px 3.5px 5.3px rgba(0, 0, 0, 0.069),
+  13px 11.6px 17.9px rgba(0, 0, 0, 0.101),
+  58px 52px 80px rgba(0, 0, 0, 0.17)
+
+;
+
+}
+
+.carousel__track {
+    display: flex;
+    width: 200%; 
+    animation: scroll 20s linear infinite;
+}
+
+.carousel__slide {
+    flex: 0 0 auto;
+    width: 20%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Move the track by half its width */
+    }
+}
+
+.about{
+    display: flex;
+    padding: 100px;
+}
+.about-photo-container,.about-text{
+    flex: 1;
+}
+.about-text h2{
+    color: var(--header-bg);
+    font-size: 48px;
+    font-weight: 700;
+}
+.about-text p{
+    font-size: 24px;
+    color: #1B1E1D;
+    text-align: justify;
+
+}
+.about-vector{
+    position: relative;
+    
+}
+.about-vector img{
+    position: absolute;
+    top: -80px;
+    left: 100px;
+        cursor: pointer;
+
+}
+
+.about-text span{
+    font-size: 24px;
+    color: var(--button);
+    text-align: justify;
+}
+.about-photo{
+    position: relative;
+  text-align: left;
+  margin-top: 80px;
+}
+.about-photo .about-hero{
+width: 90%;
+height: 100%;
+}
+.topRight{
+    position: absolute;
+            top: -40px;
+            right: 0;
+            width: 20%;
+            height:auto;
+            z-index: 10;
+}
+
+
+.features-carousel {
+    width: 100%;
+    padding: 20px 40px;
+    overflow: hidden;
+    margin-top: -22%;
+    position: relative;
+}
+
+.carousel-container {
+    z-index: 9999;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.carousel-slide {
+    z-index: 9999;
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 170px;
+    height: 180px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: var(--header-bg);
+}
+
+.carousel-slide img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-slide h3 {
+    font-size: 18px;
+    color: var(--white);
+}
+
+.carousel-slide:hover {
+    transform: scale(1.1);
+    border: 2px solid var(--button);
+    background: linear-gradient(to top,   var(--header-bg), var(--button));
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--header-bg);
+    margin-top: 24%;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+        padding: 20px 20px;
+    }
+
+    .header-container > div {
+        flex-basis: 100%;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .carousel {
+        padding: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-photo-container, .about-text {
+        flex: 1;
+    }
+
+    .about-photo img {
+        width: 100%;
+    }
+
+    .features-carousel {
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+}
