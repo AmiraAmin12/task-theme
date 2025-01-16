@@ -15,4 +15,3 @@ A custom WordPress theme developed for
 6. Activate the theme.
 
 ## License
-This theme is licensed under the [Insert your license type].
